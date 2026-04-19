@@ -30,7 +30,7 @@ import logging
 RECIPIENT_EMAILS = [
     ("sandeepmv080@gmail.com", "Sandeep"),         # ← replace with real name
     ("sandysand88888@gmail.com", "Sandeep"),
-    # ("recruiter@company3.com", None),          # ← None = "Hiring Manager"
+    ("Sandysand77777@gmail.com", "SandeepMv"),          # ← None = "Hiring Manager"
 ]
 
 # Resume path inside the container (mapped via docker volume)
