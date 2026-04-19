@@ -29,7 +29,7 @@ import logging
 # ============================================================
 RECIPIENT_EMAILS = [
     ("sandeepmv080@gmail.com", "Sandeep"),         # ← replace with real name
-    # ("hr@company2.com", "Sarah"),
+    ("sandysand88888@gmail.com", "Sandeep"),
     # ("recruiter@company3.com", None),          # ← None = "Hiring Manager"
 ]
 
