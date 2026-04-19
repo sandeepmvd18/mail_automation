@@ -28,7 +28,7 @@ import logging
 # Use None for name if unknown → falls back to "Hiring Manager"
 # ============================================================
 RECIPIENT_EMAILS = [
-    ("jonnasesi.17@gmail.com", "John"),         # ← replace with real name
+    ("sandeepmv080@gmail.com", "Sandeep"),         # ← replace with real name
     # ("hr@company2.com", "Sarah"),
     # ("recruiter@company3.com", None),          # ← None = "Hiring Manager"
 ]
