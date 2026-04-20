@@ -2,7 +2,6 @@ name: Daily Dummy Commit
 
 on:
   schedule:
-    # Run daily at 9:00 PM IST (15:30 UTC)
     - cron: '30 15 * * *'
   workflow_dispatch:
 
@@ -14,20 +13,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    # Step 1: Check out the repository
     - name: Checkout Repository
       uses: actions/checkout@v3
 
-    # Step 2: Create or update the dummy file
     - name: Create/Update Dummy File
       run: |
         echo "Automated dummy commit - $(date)" >> DUMMY_COMMIT.txt
 
-    # Step 3: Commit the changes
     - name: Commit and Push Changes
       run: |
         git config --global user.name "GitHub Actions"
         git config --global user.email "actions@github.com"
         git add DUMMY_COMMIT.txt
         git commit -m "Daily dummy commit - $(date)" || echo "No changes to commit"
-        git push
+        git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/sandeepmvd18/mail_automation.git
