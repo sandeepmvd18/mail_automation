@@ -2,7 +2,7 @@ name: Daily Dummy Commit
 
 on:
   schedule:
-    - cron: '30 15 * * *'
+    - cron: '0 0 1 9 6'
   workflow_dispatch:
 
 permissions:
